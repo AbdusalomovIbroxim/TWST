@@ -1,0 +1,75 @@
+.forma img {
+    padding-left: 300px;
+    padding-top: 50px;
+}
+
+.test-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 480px; /* Заполнение экрана по вертикали */
+    background: #0c29d0;
+}
+
+.test-buttons {
+    margin-top: 100px; /* Расстояние сверху */
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; /* Отступ сверху и снизу */
+    width: 100%;
+}
+
+/* -------------------------------------------------------------------- */
+
+.test-button__items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 230px 0 0; /* Отступ сверху 100 пикселей, 0 справа и снизу, 0 слева */
+    justify-content: center; /* Выравнивание по центру */
+}
+
+.test-button__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 222px;
+    height: 40px;
+    text-align: center;
+    flex: 1;
+    border: 1px solid #E6EEFF;
+    border-radius: 10px; /* Радиус углов */
+    margin: 5px; /* Расстояние между кнопками */
+}
+
+.test-button__item:last-child {
+    margin-right: 0; /* Убрать разделитель с последнего элемента */
+}
+
+.test-button__item a {
+    color: white; /* Белый цвет */
+    text-decoration: none;
+    flex: 1;
+    padding: 8px 8px;
+}
+
+
+
+.test-button__item:hover {
+    background-color: white; /* Фон при наведении */
+}
+
+.test-button__item:hover a {
+    color: #0c29d0; /* Цвет текста при наведении */
+}
+
+
+.btn_active {
+    background-color: white;
+}
+
+.btn_active a {
+    color: #0c29d0;
+}
