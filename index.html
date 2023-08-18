@@ -82,34 +82,43 @@
 
 
     <!-- Test section -->
-    <section class="test-section">
-        <div class="test-buttons">
-            <ul class="test-button__items">
-                <li class="test-button__item btn_active">
+    <section class="price__form-section">
+        <div class="price__form-text">
+            Soluções de ponta a ponta para vender online
+            sem dor de cabeça
+        </div>
+        <div class="price__form-buttons">
+            <ul class="price__form-button__items">
+                <li class="price__form-button__item btn_active" data-image="Untitled-2.svg">
                     <a href="#">Yangi uskunalar</a>
                 </li>
-                <li class="test-button__item">
+                <li class="price__form-button__item" data-image="icon_path_2.png">
                     <a href="#">Ishlatilgan uskunalar</a>
                 </li>
-                <li class="test-button__item">
+                <li class="price__form-button__item" data-image="icon_path_3.png">
                     <a href="#">Xom ashyo</a>
                 </li>
-                <li class="test-button__item">
+                <li class="price__form-button__item" data-image="icon_path_4.png">
                     <a href="#">Xizmat ko'rsatish</a>
                 </li>
             </ul>
         </div>
         <div class="forma">
-            <img src="./images/Untitled-2.svg" alt="banner">
+            <img id="bannerImage" src="./images/Untitled-2.svg" alt="banner">
         </div>
     </section>
 
     <script>
-        const buttons = document.querySelectorAll('.test-button__item');
+        const buttons = document.querySelectorAll('.price__form-button__item');
+        const bannerImage = document.getElementById('bannerImage');
+
         buttons.forEach(button => {
-            button.addEventListener('click', () => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault(); // Предотвращаем переход по ссылке
                 buttons.forEach(btn => btn.classList.remove('btn_active'));
                 button.classList.add('btn_active');
+                const imageName = button.getAttribute('data-image');
+                bannerImage.src = `./images/${imageName}`;
             });
         });
     </script>

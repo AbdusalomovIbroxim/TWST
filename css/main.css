@@ -5,7 +5,7 @@
     width: 50%;
 }
 
-.test-section {
+.price__form-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@
     background: #0c29d0;
 }
 
-.test-buttons {
+.price__form-buttons {
     margin-top: 100px; /* Расстояние сверху */
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@
 
 /* -------------------------------------------------------------------- */
 
-.test-button__items {
+.price__form-button__items {
     display: flex;
     list-style: none;
     padding: 0;
@@ -33,7 +33,7 @@
     justify-content: center; /* Выравнивание по центру */
 }
 
-.test-button__item {
+.price__form-button__item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,27 +46,16 @@
     margin: 5px; /* Расстояние между кнопками */
 }
 
-.test-button__item:last-child {
+.price__form-button__item:last-child {
     margin-right: 0; /* Убрать разделитель с последнего элемента */
 }
 
-.test-button__item a {
+.price__form-button__item a {
     color: white; /* Белый цвет */
     text-decoration: none;
     flex: 1;
     padding: 8px 8px;
 }
-
-
-
-.test-button__item:hover {
-    background-color: white; /* Фон при наведении */
-}
-
-.test-button__item:hover a {
-    color: #0c29d0; /* Цвет текста при наведении */
-}
-
 
 .btn_active {
     background-color: white;
@@ -75,3 +64,6 @@
 .btn_active a {
     color: #0c29d0;
 }
+
+/* ------------------------------- */
+
