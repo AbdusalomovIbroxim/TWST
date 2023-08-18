@@ -86,16 +86,16 @@
         <div class="test-buttons">
             <ul class="test-button__items">
                 <li class="test-button__item btn_active">
-                    <a href="#">1</a>
+                    <a href="#">Yangi uskunalar</a>
                 </li>
                 <li class="test-button__item">
-                    <a href="#">2</a>
+                    <a href="#">Ishlatilgan uskunalar</a>
                 </li>
                 <li class="test-button__item">
-                    <a href="#">3</a>
+                    <a href="#">Xom ashyo</a>
                 </li>
                 <li class="test-button__item">
-                    <a href="#">4</a>
+                    <a href="#">Xizmat ko'rsatish</a>
                 </li>
             </ul>
         </div>
@@ -103,6 +103,16 @@
             <img src="./images/Untitled-2.svg" alt="banner">
         </div>
     </section>
+
+    <script>
+        const buttons = document.querySelectorAll('.test-button__item');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                buttons.forEach(btn => btn.classList.remove('btn_active'));
+                button.classList.add('btn_active');
+            });
+        });
+    </script>
 
 
 </body>
