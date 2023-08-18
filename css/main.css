@@ -67,22 +67,35 @@
 
 /* ------------------------------- */
 
-.forma img {
+.test {
+    display: flex;
+}
+
+.forma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+.test img {
     position: absolute;
     top: 500px; /* Расстояние сверху */
-    left: 0; /* Расстояние слева */
-    width: 50%;
+    left: 0px; 
+    max-width: 100%;
+    height: auto;
 }
+
 
 /* --------- */
 
 
 .price__form-form {
     position: absolute;
-    top: 500px; /* Расстояние сверху */
-    left: 70%; /* Левый отступ */
-    transform: translateX(-50%); /* Центрирование по горизонтали */
-    /* width: 70%; */
+    top: 500px; 
+    left: 65%;
+    /* transform: translateX(-40%); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,13 +103,37 @@
     border-radius: 10px;
 }
 
+.price__form-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-button {
+.price__form-form label {
+    font-weight: bold;
+}
+
+.price__form-form input[type="text"],
+.price__form-form textarea,
+.price__form-form select,
+.price__form-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.price__form-form button[type="submit"] {
     background-color: #0c29d0;
     color: white;
-    padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
+}
+
+.price__form-form button[type="submit"]:hover {
+    background-color: #091f99;
 }
 
