@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TWST</title>
+    <title>Tecnoprom</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
     
@@ -84,27 +85,66 @@
     <!-- Test section -->
     <section class="price__form-section">
         <div class="price__form-text">
-            Soluções de ponta a ponta para vender online
-            sem dor de cabeça
+            Ishlab chiqarish uchun hammasini <br> bir joyda toping va taklif eting!
         </div>
         <div class="price__form-buttons">
             <ul class="price__form-button__items">
                 <li class="price__form-button__item btn_active" data-image="Untitled-2.svg">
-                    <a href="#">Yangi uskunalar</a>
+                    <a href="#">yangi uskunalar</a>
                 </li>
                 <li class="price__form-button__item" data-image="icon_path_2.png">
-                    <a href="#">Ishlatilgan uskunalar</a>
+                    <a href="#">ishlatilgan uskunalar</a>
                 </li>
                 <li class="price__form-button__item" data-image="icon_path_3.png">
-                    <a href="#">Xom ashyo</a>
+                    <a href="#">xom ashyo</a>
                 </li>
                 <li class="price__form-button__item" data-image="icon_path_4.png">
-                    <a href="#">Xizmat ko'rsatish</a>
+                    <a href="#">xizmat ko'rsatish</a>
+                </li>                
+                <li class="price__form-button__item" data-image="icon_path_4.png">
+                    <a href="#">texnolog</a>
                 </li>
             </ul>
         </div>
+
         <div class="forma">
             <img id="bannerImage" src="./images/Untitled-2.svg" alt="banner">
+        </div>
+
+        <div class="price__form-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Название:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Описание:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="category">Категория:</label>
+                    <select id="category" name="category" required>
+                        <option value="" disabled selected>Выберите категорию</option>
+                        <option value="category1">Категория 1</option>
+                        <option value="category2">Категория 2</option>
+                        <!-- Другие варианты категорий -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subcategory">Субкатегория:</label>
+                    <select id="subcategory" name="subcategory" required>
+                        <option value="" disabled selected>Выберите субкатегорию</option>
+                        <option value="subcategory1">Субкатегория 1</option>
+                        <option value="subcategory2">Субкатегория 2</option>
+                        <!-- Другие варианты субкатегорий -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="photo">Фото:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
         </div>
     </section>
 
