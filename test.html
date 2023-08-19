@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Me Web Servises</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial=scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./js/style.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="main-header__logo">
+                <a href="index.html">
+                    <img src="./images/TECNOPROM-LOGO.png" alt="logo">
+                </a>
+            </div>
+            <div class="main-navigations">
+                <nav class="main-navigation">
+                    <a href="#" class="main-navigation__button">sanoat
+                        <img src="./images/at.png" class="img__categories" alt="img for categories">
+                    </a>
+                    
+                    <ul class="main-navigation__items">
+                        <li class="main-navigation__item"><a href="#">Plastmassa</a></li>
+                        <li class="main-navigation__item"><a href="#">Qadoqlash</a></li>
+                        <li class="main-navigation__item"><a href="#">Tekstil</a></li>
+                        <li class="main-navigation__item"><a href="#">Oziq-ovqat</a></li>
+                        <li class="main-navigation__item"><a href="#">Agro</a></li>
+                        <li class="main-navigation__item"><a href="#">Metall</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="main-navigation">
+                    <a href="#" class="main-navigation__button">yo'nalishlar</a>
+                    <ul class="main-navigation__items">
+                        <li class="main-navigation__item">
+                            <a href="#">
+                                <img src="./images/yangi-uskunalar-24px.png" alt="">
+                                Yangi uskunalar
+                            </a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">
+                                <img src="./images/ishlatilgan-uskunalar-24px.png" alt="">
+                                Ishlatilgan uskunalar
+                            </a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">
+                                <img src="./images/icon-xomashyo-24px.png" alt="">
+                                Xom ashyo
+                            </a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">
+                                <img src="./images/sanoat-xomashyo-24px.png" alt="">
+                                Xizmat ko'rsatish
+                            </a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">
+                                <img src="./images/texnologlar-24px.png" alt="">
+                                Texnologlar
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="right-buttons">
+                <ul class="buttons">
+                    <li class="planos-button"><a href="#">planos</a></li>
+                    <li class="login-button"><a href="#">login</a></li>
+                    <li class="price-button"><a href="#price-form">contrate olist store</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- /Header section -->
+
+    <!-- Main section -->
+    <div class="main-banner">
+        <div class="container">
+            <section id="price__form-section" class="price__form-section">
+                <div class="price__form-text">
+                    Ishlab chiqarish uchun hammasini <br> bir joyda toping va taklif eting!
+                </div>
+                <div class="price__form-buttons">
+                    <ul class="price__form-button__items">
+                        <li class="price__form-button__item btn_active" data-image="ilustra-ecossitema-tiny-desktop.png">
+                            <a href="#">yangi uskunalar</a>
+                        </li>
+                        <li class="price__form-button__item" data-image="icon_path_2.png">
+                            <a href="#">ishlatilgan uskunalar</a>
+                        </li>
+                        <li class="price__form-button__item" data-image="icon_path_3.png">
+                            <a href="#">xom ashyo</a>
+                        </li>
+                        <li class="price__form-button__item" data-image="icon_path_4.png">
+                            <a href="#">xizmat ko'rsatish</a>
+                        </li>                
+                        <li class="price__form-button__item" data-image="icon_path_4.png">
+                            <a href="#">texnolog</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>    
+    </div>
+
+
+    <!-- /Main section -->
+
+    <!-- Statictics -->
+    <div id="price-form" class="container">
+        <section class="price-form">
+            <div class="price__image-form">
+                <img id="bannerImage" src="./images/ilustra-ecossitema-tiny-desktop.png" alt="">
+            </div>
+
+            <div class="price__form-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">название:</label>
+                        <input type="text" id="name" name="name" required placeholder="название">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Описание:</label>
+                        <textarea id="description" name="description" rows="4" required placeholder="описание"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Категория:</label>
+                        <select id="category" name="category" required>
+                            <option value="" disabled selected>Выберите категорию</option>
+                            <option value="yangi uskunalar">yangi uskunalar</option>
+                            <option value="ishlatilgan uskunalar">ishlatilgan uskunalar</option>
+                            <option value="xom ashyo">xom ashyo</option>
+                            <option value="xizmat ko'rsatish">xizmat ko'rsatish</option>
+                            <option value="texnolog">texnolog</option>
+                            <!-- Другие варианты категорий -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="subcategory">Субкатегория:</label>
+                        <select id="subcategory" name="subcategory" required>
+                            <option value="" disabled selected>Выберите субкатегорию</option>
+                            <option value="Субкатегория 1">Субкатегория 1</option>
+                            <option value="Субкатегория 2">Субкатегория 2</option>
+                            <!-- Другие варианты субкатегорий -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Фото:</label>
+                        <input type="file" id="photo" name="photo" accept="image/*" required>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+                
+            </div>
+        </section>
+    </div>
+    <!-- /Statictics -->
+
+    <!-- About me section -->
+    <div class="container">
+        <section id="about-me-section" class="about-me">
+            <div class="about-me__image">
+                <img src="./img/man.png" alt="About me image">
+            </div>
+            <div class="about-me__info">
+                <h5 class="section-subtitle">
+                    About me
+                    <span class="blur-line"></span>
+                </h5>
+                <h3 class="section-title">
+                    Senior Developer
+                </h3>
+                <p class="about-me__description">
+                    Elasticsearch is a powerful search engine and analytics tool that can be integrated with Django to enhance search functionality in web applications. By using Elasticsearch, you can provide efficient and fast full-text search capabilities for your Django models.
+                </p>
+    
+                <button type="button" class="about-me__action button to-uppercase">
+                    CV ko'chirib olish
+                </button>
+            </div>
+        </section>
+        <div class="clearfix"></div>
+    </div>
+    <!-- /About me section -->
+
+    <!-- Services section -->
+    <div class="container">
+        <section id="services-section" class="services-section">
+            <h5 class="section-subtitle">
+                Services
+                <span class="blur-line"></span>
+            </h5>
+            <h2 class="section-title">
+                Services<br>
+                I offer
+            </h2>
+            <div class="div service-cards">
+                <div class="service-card">        
+                    <img class="service-card__icon" src="./img/code-solid.png" alt="Service 1">
+                    <h5 class="service-card__title">Web Development</h5>
+                    <p class="service-card__description">Crafting attractive and functional websites that leave a lasting impression on your users.</p>
+                    <a href="#" class="service-card__link">More</a>
+                </div>
+
+                <div class="service-card">        
+                    <img class="service-card__icon" src="./img/telegram.png" alt="Service 1">
+                    <h5 class="service-card__title">Telegram Bots</h5>
+                    <p class="service-card__description">Building smart and automated bots for Telegram to enhance interaction with your audience.</p>
+                    <a href="#" class="service-card__link">More</a>
+                </div>
+    
+                <div class="service-card">        
+                    <img class="service-card__icon" src="./img/html5.png" alt="Service 1">
+                    <h5 class="service-card__title">Design</h5>
+                    <p class="service-card__description">Innovative design for your brand, emphasizing the uniqueness and style of your product or service.</p>
+                    <a href="#" class="service-card__link">More</a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <!-- /Services section -->
+
+    <!-- Clients section -->
+    <div class="container">
+        <section id="clients-section" class="clients">
+            <h5 class="section-subtitle">
+                MY clients
+                <span class="blur-line"></span>
+            </h5>
+            <h2 class="section-title">
+                Satisfied<br>
+                Clients Speak
+            </h2>
+            <div class="client-items">
+                <div class="client-item">
+                    <div class="client-item__image">
+                        <img src="./img/user-solid.png" alt="Client image">
+                    </div>
+                    <div class="client-item__info">
+                        <h3 class="client-item__name">
+                            Ibroxim Abdusalomov
+                        </h3>
+                        <p class="client-item__itemposition">Senior Senior Developer</p>
+                        <p class="client-item__review">
+                            I couldn't be more thrilled with the exceptional service and outstanding results I received from this team. They went above and beyond to create a website that perfectly represents my brand and meets all my requirements. Highly recommend their expertise!
+                        </p>
+                        <div class="client-item__rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star disabled"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="client-item">
+                    <div class="client-item__image">
+                        <img src="./img/user-solid.png" alt="Client image">
+                    </div>
+                    <div class="client-item__info">
+                        <h3 class="client-item__name">
+                            Ibroxim Abdusalomov
+                        </h3>
+                        <p class="client-item__itemposition">Senior Senior Developer</p>
+                        <p class="client-item__review">
+                            I couldn't be more thrilled with the exceptional service and outstanding results I received from this team. They went above and beyond to create a website that perfectly represents my brand and meets all my requirements. Highly recommend their expertise!
+                        </p>
+                        <div class="client-item__rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star disabled"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="client-item">
+                    <div class="client-item__image">
+                        <img src="./img/user-solid.png" alt="Client image">
+                    </div>
+                    <div class="client-item__info">
+                        <h3 class="client-item__name">
+                            Ibroxim Abdusalomov
+                        </h3>
+                        <p class="client-item__itemposition">Senior Senior Developer</p>
+                        <p class="client-item__review">
+                            I couldn't be more thrilled with the exceptional service and outstanding results I received from this team. They went above and beyond to create a website that perfectly represents my brand and meets all my requirements. Highly recommend their expertise!
+                        </p>
+                        <div class="client-item__rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star disabled"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="clearfix"></div>
+    </div>
+    <!-- /Clients section -->
+
+    <!-- Portfolio section -->
+    <div class="container">
+        <section id="portfolio-section" class="portfolio-section">
+            <h5 class="section-subtitle">
+                My projects
+                <span class="blur-line"></span>
+            </h5>
+            <h2 class="section-title">
+                See my<br>
+                Latest Projects
+            </h2>
+            <ul class="portfolio-filters">
+                <li class="all active">
+                    All
+                </li>
+                <li class="recomments">
+                    Recomdations
+                </li>
+                <li class="lasts">
+                    Lasts
+                </li>
+            </ul>
+
+            <div class="portfolio-items">
+                <div class="portfolio-item portfolio-item-1">
+                    <img src="/img/image-1.jpg" alt="Portfolio item image" class="portfolio-item__image">
+                    <div class="portfolio-item__overlay"></div>
+                    <div class="portfolio-item__info">
+                        <h4>
+                            <a href="#">Postfolio item 1</a>
+                            <p>
+                                About my work
+                            </p>
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item portfolio-item-2">
+                    <img src="/img/image-2.png" alt="Portfolio item image" class="portfolio-item__image">
+                    <div class="portfolio-item__overlay"></div>
+                    <div class="portfolio-item__info">
+                        <h4>
+                            <a href="#">Postfolio item 2</a>
+                            <p>
+                                About my work
+                            </p>
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item portfolio-item-3">
+                    <img src="/img/image-3.png" alt="Portfolio item image" class="portfolio-item__image">
+                    <div class="portfolio-item__overlay"></div>
+                    <div class="portfolio-item__info">
+                        <h4>
+                            <a href="#">Postfolio item 3</a>
+                            <p>
+                                About my work
+                            </p>
+                        </h4>
+                    </div>
+                </div>
+
+                <!-- <div class="portfolio-item portfolio-item__3">
+                    <img src="/img/photo_2023-08-07_18-07-54.jpg " alt="Portfolio item image" class="portfolio-item__image">
+                    <div class="portfolio-item__overlay"></div>
+                    <div class="portfolio-item__info">
+                        <h4>
+                            <a href="#">Postfolio item 2</a>
+                            <p>
+                                About my work
+                            </p>
+                        </h4>
+                    </div>
+                </div> -->
+            </div>
+        </section>    
+    </div>
+    <!-- /Portfolio section -->
+
+    <!-- Blog section -->
+    <div class="container">
+        <section id="blog-section" class="blog">
+            <div class="section-subtitle">
+                My blog
+                <span class="blur-line"></span>
+            </div>
+            <div class="section-title">
+                Last vlogs
+            </div>
+            <div class="blog-items">
+                <div class="blog-item">
+                    <div class="blog-item__image">
+                        <img src="./img/photo_2023-08-08_16-14-17.jpg" alt="Vlog image 1">
+                    </div>
+                    <div class="blog-item__info">
+                        <div class="blog-item__main-info">
+                            <i class="fa fa-user"></i>
+                            <span class="blog-item__author">Ibroxim Abdusalomov</span>
+                            <i class="fa fa-calendar"></i>
+                            <span class="blog-item__date">Avg 8, 2023</span>
+                        </div>
+                        <h5 class="blog-item__title">
+                            My vlog
+                        </h5>
+                        <p class="blog-item__description">
+                            Я наконец-то нашла реально приятный плейлист для себя. Я люблю фонк, но когда хочу что то найти, всегда нахожу только агрессивные треки. Спасибо за потраченное время и кайф для моих ушек.
+                        </p>
+                        <a href="" class="blog-item__learn-more">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-item__image">
+                        <img src="./img/photo_2023-08-08_16-14-18.jpg" alt="Vlog image 2">
+                    </div>
+                    <div class="blog-item__info">
+                        <div class="blog-item__main-info">
+                            <i class="fa fa-user"></i>
+                            <span class="blog-item__author">Ibroxim Abdusalomov</span>
+                            <i class="fa fa-calendar"></i>
+                            <span class="blog-item__date">Avg 8, 2023</span>
+                        </div>
+                        <h5 class="blog-item__title">
+                            My vlog
+                        </h5>
+                        <p class="blog-item__description">
+                            Я наконец-то нашла реально приятный плейлист для себя. Я люблю фонк, но когда хочу что то найти, всегда нахожу только агрессивные треки. Спасибо за потраченное время и кайф для моих ушек.
+                        </p>
+                        <a href="" class="blog-item__learn-more">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-item__image">
+                        <img src="./img/photo_2023-08-08_16-14-19.jpg" alt="Vlog image 3">
+                    </div>
+                    <div class="blog-item__info">
+                        <div class="blog-item__main-info">
+                            <i class="fa fa-user"></i>
+                            <span class="blog-item__author">Ibroxim Abdusalomov</span>
+                            <i class="fa fa-calendar"></i>
+                            <span class="blog-item__date">Avg 8, 2023</span>
+                        </div>
+                        <h5 class="blog-item__title">
+                            My vlog
+                        </h5>
+                        <p class="blog-item__description">
+                            Я наконец-то нашла реально приятный плейлист для себя. Я люблю фонк, но когда хочу что то найти, всегда нахожу только агрессивные треки. Спасибо за потраченное время и кайф для моих ушек.
+                        </p>
+                        <a href="" class="blog-item__learn-more">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>    
+    </div>
+    <!-- /Blog section -->
+
+    <!-- Partners section -->
+    <div class="container">
+        <section id="partners" class="partners">
+            <div class="partner">
+                <img src="./img/partner 1.jpeg" alt="Partner 1">
+            </div>
+            <div class="partner">
+                <img src="./img/partner 2.jpeg" alt="Partner 2">
+            </div>
+            <div class="partner">
+                <img src="./img/partner 3.jpeg" alt="Partner 3">
+            </div>
+            <div class="partner">
+                <img src="./img/partner 4.jpeg" alt="Partner 4">
+            </div>
+            <div class="partner">
+                <img src="./img/partner 5.jpeg" alt="Partner 5">
+            </div>
+        </section>
+    </div>
+    <!-- /Partners section -->
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__brand">
+                <img src="./img/linux-22617.png" alt="Lego">
+            </div>
+
+            <nav class="footer__navigation">
+                <ul class="footer__navigation-items">
+                    <li class="footer__navigation-item"><a href="#">Main menu</a></li>
+                    <li class="footer__navigation-item"><a href="#">About me</a></li>
+                    <li class="footer__navigation-item"><a href="#">Servises</a></li>
+                    <li class="footer__navigation-item"><a href="#">Clients</a></li>
+                    <li class="footer__navigation-item"><a href="#">Porlio</a></li>
+                    <li class="footer__navigation-item"><a href="#">Blog</a></li>
+                    <li class="footer__navigation-item"><a href="#">Partners</a></li>
+                </ul>
+            </nav>
+
+            <ul class="footer__socials">
+                <li class="footer__social">
+                    <a href="https://t.me/Ibr6xim" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </li>
+                <li class="footer__social">
+                    <a href="https://www.instagram.com/roxim_life/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="footer__social">
+                    <a href="https://www.facebook.com/profile.php?id=100086847567526" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+            
+            <p class="footer__text">
+                Copyright 2023 All rightsreserved | This template is made with by Colorlib
+            </p>
+        </div>
+    </footer>
+    <!-- /Footer section -->
+    <script>
+        const buttons = document.querySelectorAll('.price__form-button__item');
+        const bannerImage = document.getElementById('bannerImage');
+        const categorySelect = document.getElementById('category');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault(); // Предотвращаем переход по ссылке
+                buttons.forEach(btn => btn.classList.remove('btn_active'));
+                button.classList.add('btn_active');
+                const imageName = button.getAttribute('data-image');
+                bannerImage.src = `./images/${imageName}`;
+
+        const categoryText = button.querySelector('a').innerText;
+        const categoryOption = categorySelect.querySelector(`[value="${categoryText}"]`);
+            if (categoryOption) {
+                categoryOption.selected = true;
+            }
+            });
+        });
+    </script>
+</body>
+</html>
